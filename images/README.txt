@@ -1,0 +1,1 @@
+Сменете placeholder изображенията със: hero-kindergarten.jpg, gallery-1.jpg, gallery-2.jpg, gallery-3.jpg, gallery-4.jpg
