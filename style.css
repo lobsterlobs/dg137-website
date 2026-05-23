@@ -350,6 +350,59 @@ h2{font-size:clamp(34px,4vw,50px)}
   font-weight: 700;
 }
 
+.documents-state {
+  grid-column: 1 / -1;
+  padding: 24px 28px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.75);
+  border: 1px dashed rgba(18,75,50,.18);
+  color: #385847;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 18px 45px rgba(35, 65, 47, 0.08);
+}
+
+.documents-state--error {
+  color: #7a2b2b;
+  background: rgba(255,243,243,.9);
+  border-color: rgba(122,43,43,.2);
+}
+
+.doc-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eaf6df;
+  color: #2f8c45;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.doc-action {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #63b65c, #2f8c45);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 12px 28px rgba(63, 155, 78, 0.24);
+}
+
+.doc-tile p {
+  margin: 12px 0 18px;
+  color: #5f6f65;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
 @media (max-width: 900px) {
   .documents-grid {
     grid-template-columns: repeat(2, 1fr);
