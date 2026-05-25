@@ -11,6 +11,70 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="site-decorations" aria-hidden="true">
+    <span class="decor-element decor-balloon float-a" style="top: 5%; left: 6%;">
+      <svg viewBox="0 0 56 84" role="presentation">
+        <ellipse cx="28" cy="30" rx="16" ry="22" fill="#ffd7e1"/>
+        <path d="M28 52c-5 0-9 4-9 9v8h18v-8c0-5-4-9-9-9Z" fill="#ffd7e1"/>
+        <path d="M28 18c-4 0-7 3-7 7" stroke="#f68db2" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-heart float-b" style="top: 12%; right: 8%;">
+      <svg viewBox="0 0 48 48" role="presentation">
+        <path d="M24 40s-11-7-11-16c0-5 4-9 9-9 3 0 5 1 7 3 2-2 4-3 7-3 5 0 9 4 9 9 0 9-11 16-11 16Z" fill="#ffe7eb" stroke="#f68db2" stroke-width="2"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-sun float-c" style="top: 28%; left: 11%;">
+      <svg viewBox="0 0 68 68" role="presentation">
+        <circle cx="34" cy="34" r="16" fill="#ffd879"/>
+        <path d="M34 8v6M34 54v6M8 34h6M54 34h6M16 16l4 4M48 48l4 4M16 52l4-4M48 20l4-4" stroke="#f4b65c" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-flower float-d" style="top: 32%; right: 15%;">
+      <svg viewBox="0 0 52 52" role="presentation">
+        <circle cx="26" cy="26" r="7" fill="#ffd879"/>
+        <ellipse cx="26" cy="10" rx="6" ry="8" fill="#f68db2"/>
+        <ellipse cx="26" cy="42" rx="6" ry="8" fill="#7fc38a"/>
+        <ellipse cx="10" cy="26" rx="8" ry="6" fill="#ffe7eb"/>
+        <ellipse cx="42" cy="26" rx="8" ry="6" fill="#e8f2df"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-leaf float-e" style="top: 54%; left: 7%;">
+      <svg viewBox="0 0 54 34" role="presentation">
+        <ellipse cx="27" cy="17" rx="18" ry="10" fill="#e8f2df"/>
+        <path d="M27 17c0-8 8-13 20-13" stroke="#2f7d49" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-star float-f" style="top: 68%; right: 12%;">
+      <svg viewBox="0 0 48 48" role="presentation">
+        <path d="M24 6l4 11 12 1-9 7 3 12-10-6-10 6 3-12-9-7 12-1 4-11Z" fill="#fff8d8" stroke="#f5c84b" stroke-width="2"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-berry float-g" style="top: 72%; left: 18%;">
+      <svg viewBox="0 0 40 40" role="presentation">
+        <circle cx="20" cy="20" r="12" fill="#f68db2"/>
+        <path d="M20 8c-3 0-6 2-7 5" stroke="#b14c66" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-bunny float-h" style="top: 76%; right: 24%;">
+      <svg viewBox="0 0 56 56" role="presentation">
+        <ellipse cx="28" cy="34" rx="16" ry="12" fill="#fff" stroke="#2f7d49" stroke-width="2"/>
+        <circle cx="20" cy="25" r="4" fill="#2f7d49"/>
+        <circle cx="36" cy="25" r="4" fill="#2f7d49"/>
+        <path d="M22 17c3-3 9-3 12 0" stroke="#2f7d49" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        <path d="M18 34c2 6 8 10 10 10s8-4 10-10" stroke="#2f7d49" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      </svg>
+    </span>
+    <span class="decor-element decor-teddy float-i" style="top: 88%; left: 42%;">
+      <svg viewBox="0 0 56 56" role="presentation">
+        <ellipse cx="28" cy="34" rx="16" ry="12" fill="#ffd7e1" stroke="#f68db2" stroke-width="2"/>
+        <circle cx="21" cy="24" r="3.5" fill="#2f7d49"/>
+        <circle cx="35" cy="24" r="3.5" fill="#2f7d49"/>
+        <path d="M18 22c4-6 8-8 10-8 2 0 6 2 10 8" stroke="#2f7d49" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M23 36c1 3 4 5 5 5s4-2 5-5" stroke="#f68db2" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#home" class="brand" aria-label="137 ДГ Калина Малина">
@@ -27,7 +91,6 @@
       <nav class="main-nav" aria-label="Основна навигация">
         <a href="#home" class="active">Начало</a>
         <a href="#about">За нас</a>
-        <a href="#activities">Дейности</a>
         <a href="#news">Новини</a>
         <a href="#gallery">Галерия</a>
         <a href="#documents">Документи</a>
@@ -35,26 +98,97 @@
       </nav>
 
       <a class="header-cta" href="#contacts">
-        <span>☎</span> Свържете се с нас
+        <span class="header-cta-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M6.5 3.5h4l2 4.5-2.3 1.6a11 11 0 0 0 5.7 5.7l1.6-2.3 4.5 2v4a1.5 1.5 0 0 1-1.5 1.5A13.5 13.5 0 0 1 5 5a1.5 1.5 0 0 1 1.5-1.5Z"/>
+          </svg>
+        </span>
+        Свържете се с нас
       </a>
     </div>
   </header>
 
   <main id="home">
     <section class="hero section">
+      <div class="hero-bg-layers" aria-hidden="true">
+        <!-- Soft blobs and curved backgrounds -->
+        <svg class="hero-bg-blob hero-bg-blob1" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="300" cy="170" rx="300" ry="120" fill="#f4f0e5"/>
+        </svg>
+        <svg class="hero-bg-blob hero-bg-blob2" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="200" cy="90" rx="180" ry="70" fill="#e8f2df"/>
+        </svg>
+        <svg class="hero-bg-blob hero-bg-blob3" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="160" cy="60" rx="120" ry="40" fill="#ffe7eb"/>
+        </svg>
+        <!-- Floating berries, leaves, hearts, flowers -->
+        <svg class="hero-float berry" style="top:12%;left:7%" width="38" height="38" viewBox="0 0 38 38"><circle cx="19" cy="19" r="13" fill="#f68db2"/><ellipse cx="19" cy="10" rx="3" ry="7" fill="#b14c66" opacity=".18"/></svg>
+        <svg class="hero-float leaf" style="top:22%;right:10%" width="44" height="28" viewBox="0 0 44 28"><ellipse cx="22" cy="14" rx="18" ry="10" fill="#7fc38a"/><path d="M22 14c0-7 7-13 18-13" stroke="#2f7d49" stroke-width="2" fill="none"/></svg>
+        <svg class="hero-float heart" style="bottom:18%;left:12%" width="36" height="36" viewBox="0 0 36 36"><path d="M18 32s-10-6-10-14c0-5 4-8 8-8 2 0 4 1 6 3 2-2 4-3 6-3 4 0 8 3 8 8 0 8-10 14-10 14Z" fill="#f68db2" stroke="#b14c66" stroke-width="2"/></svg>
+        <svg class="hero-float flower" style="bottom:10%;right:8%" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="7" fill="#ffd879"/><ellipse cx="20" cy="7" rx="5" ry="8" fill="#ffe7eb"/><ellipse cx="20" cy="33" rx="5" ry="8" fill="#e8f2df"/><ellipse cx="7" cy="20" rx="8" ry="5" fill="#ffe7eb"/><ellipse cx="33" cy="20" rx="8" ry="5" fill="#e8f2df"/></svg>
+      </div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="decor sun">☀</div>
-          <div class="decor cloud">☁</div>
+          <div class="decor sun" aria-hidden="true">
+            <svg viewBox="0 0 72 72" role="presentation">
+              <circle cx="36" cy="36" r="16" fill="#ffd879"/>
+              <path d="M36 9v6M36 57v6M9 36h6M57 36h6M17 17l4 4M51 51l4 4M17 55l4-4M51 21l4-4" stroke="#f4b65c" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="decor cloud" aria-hidden="true">
+            <svg viewBox="0 0 88 56" role="presentation">
+              <path d="M22 31c0-8 6-13 13-13 3 0 6 1 9 3 2-4 6-7 11-7 7 0 13 5 13 13 0 1 0 2 0 3h2c5 0 9 4 9 9s-4 9-9 9H22c-5 0-9-4-9-9s4-9 9-9h0Z" fill="#fdfbf3"/>
+              <path d="M22 31c0-8 6-13 13-13 3 0 6 1 9 3 2-4 6-7 11-7 7 0 13 5 13 13" stroke="#cce0d4" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
           <p class="eyebrow">Добре дошли в</p>
           <h1>137 ДГ<br>Калина Малина</h1>
           <p class="hero-text">Място, където децата растат щастливи, обичани и вдъхновени да откриват света.</p>
           <a href="#about" class="primary-btn">Научете повече за нас <span>→</span></a>
 
           <div class="hero-badges" aria-label="Основни предимства">
-            <div><span>♥</span><p>Грижа и внимание</p></div>
-            <div><span>🌱</span><p>Учене чрез игра</p></div>
-            <div><span>★</span><p>Екип от професионалисти</p></div>
+            <div class="hero-badge-card">
+              <div class="hero-badge-visual pink" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="presentation">
+                  <ellipse cx="48" cy="72" rx="24" ry="8" fill="#f68db2" opacity="0.14"/>
+                  <path d="M48 27c-7 0-12 5-12 12 0 3 1 6 3 8l9 9 9-9c2-2 3-5 3-8 0-7-5-12-12-12Z" fill="#f68db2" stroke="#b14c66" stroke-width="2.5" stroke-linejoin="round"/>
+                  <path d="M35 52c2 4 6 7 13 7s11-3 13-7" stroke="#b14c66" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+                  <path d="M43 39c0 2-1 4-3 4-2 0-4-2-4-4 0-2 2-4 4-4 2 0 3 2 3 4Z" fill="#fff4f7"/>
+                  <path d="M58 39c0 2-1 4-3 4-2 0-4-2-4-4 0-2 2-4 4-4 2 0 3 2 3 4Z" fill="#fff4f7"/>
+                  <path d="M42 46c1 1 2 2 3 2 1 0 2-1 3-2" stroke="#fff4f7" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <p>Грижа и внимание</p>
+            </div>
+            <div class="hero-badge-card">
+              <div class="hero-badge-visual green" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="presentation">
+                  <ellipse cx="48" cy="72" rx="24" ry="8" fill="#7fc38a" opacity="0.14"/>
+                  <rect x="22" y="28" width="52" height="36" rx="12" fill="#f7fff8" stroke="#2f7d49" stroke-width="2.5"/>
+                  <path d="M28 35h40" stroke="#7fc38a" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M28 43h18" stroke="#2f7d49" stroke-width="2.4" stroke-linecap="round"/>
+                  <path d="M28 50h24" stroke="#2f7d49" stroke-width="2.4" stroke-linecap="round"/>
+                  <rect x="56" y="38" width="10" height="10" rx="3" fill="#f68db2"/>
+                  <rect x="56" y="52" width="10" height="8" rx="3" fill="#ffd879"/>
+                  <path d="M18 66c6-5 13-8 30-8s24 3 30 8" stroke="#2f7d49" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <p>Учене чрез игра</p>
+            </div>
+            <div class="hero-badge-card">
+              <div class="hero-badge-visual yellow" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="presentation">
+                  <ellipse cx="48" cy="72" rx="24" ry="8" fill="#ffd879" opacity="0.18"/>
+                  <circle cx="48" cy="30" r="11" fill="#ffd879" stroke="#c18718" stroke-width="2.4"/>
+                  <path d="M48 42c-9 0-16 7-16 16h32c0-9-7-16-16-16Z" fill="#fff5db" stroke="#c18718" stroke-width="2.4" stroke-linejoin="round"/>
+                  <path d="M36 58c3-2 7-3 12-3s9 1 12 3" stroke="#c18718" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+                  <circle cx="35" cy="52" r="4" fill="#f68db2"/>
+                  <circle cx="61" cy="52" r="4" fill="#7fc38a"/>
+                  <path d="M28 71h40" stroke="#c18718" stroke-width="2.4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <p>Екип от професионалисти</p>
+            </div>
           </div>
 
         </div>
@@ -65,31 +199,100 @@
       </div>
     </section>
 
+    <!-- Section divider: leaf/berry motif and soft curve -->
+    <div class="section-divider" aria-hidden="true">
+      <svg class="divider-bg" viewBox="0 0 1440 120" width="100%" height="120" preserveAspectRatio="none">
+        <path d="M0,40 Q360,120 720,60 Q1080,0 1440,80 V120H0Z" fill="#f4f0e5"/>
+      </svg>
+      <svg class="divider-motif berry" viewBox="0 0 38 38" width="38" height="38" style="left:12%;top:38%">
+        <circle cx="19" cy="19" r="13" fill="#f68db2"/>
+        <ellipse cx="19" cy="10" rx="3" ry="7" fill="#b14c66" opacity=".18"/>
+      </svg>
+      <svg class="divider-motif leaf" viewBox="0 0 44 28" width="44" height="28" style="left:82%;top:22%">
+        <ellipse cx="22" cy="14" rx="18" ry="10" fill="#7fc38a"/>
+        <path d="M22 14c0-7 7-13 18-13" stroke="#2f7d49" stroke-width="2" fill="none"/>
+      </svg>
+      <svg class="divider-motif heart" viewBox="0 0 36 36" width="36" height="36" style="left:48%;top:60%">
+        <path d="M18 32s-10-6-10-14c0-5 4-8 8-8 2 0 4 1 6 3 2-2 4-3 6-3 4 0 8 3 8 8 0 8-10 14-10 14Z" fill="#f68db2" stroke="#b14c66" stroke-width="2"/>
+      </svg>
+    </div>
+
     <section id="about" class="daily section">
+      <div class="section-decorations" aria-hidden="true">
+        <span class="decor-element decor-heart float-j" style="top: 12%; left: 2%; width: 52px; height: 52px;">
+          <svg viewBox="0 0 48 48" role="presentation">
+            <path d="M24 40s-11-7-11-16c0-5 4-9 9-9 3 0 5 1 7 3 2-2 4-3 7-3 5 0 9 4 9 9 0 9-11 16-11 16Z" fill="#ffe7eb" stroke="#f68db2" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="decor-element decor-star float-k" style="top: 18%; right: 6%; width: 42px; height: 42px;">
+          <svg viewBox="0 0 48 48" role="presentation">
+            <path d="M24 6l4 11 12 1-9 7 3 12-10-6-10 6 3-12-9-7 12-1 4-11Z" fill="#fff8d8" stroke="#f5c84b" stroke-width="2"/>
+          </svg>
+        </span>
+      </div>
       <div class="container">
         <div class="section-heading centered">
           <h2>Нашето ежедневие</h2>
-          <span class="heart-line">♥</span>
+          <span class="heart-line" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="presentation">
+              <path d="M32 54s-14-8-14-22c0-8 6-13 12-13 3 0 5 1 7 3 2-2 4-3 7-3 6 0 12 5 12 13 0 14-14 22-14 22Z" fill="#f68db2" stroke="#b14c66" stroke-width="2.6"/>
+            </svg>
+          </span>
         </div>
 
         <div class="cards-grid">
-          <article class="daily-card">
-            <div class="icon pink">👥</div>
+          <article class="daily-card atelier-card atelier-card-pink">
+            <div class="atelier-card-blob"></div>
+            <div class="atelier-card-illu" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="48" height="48">
+                <ellipse cx="32" cy="38" rx="18" ry="10" fill="#ffe7eb"/>
+                <circle cx="24" cy="28" r="7" fill="#f68db2"/>
+                <circle cx="40" cy="28" r="7" fill="#f68db2"/>
+                <ellipse cx="32" cy="38" rx="10" ry="5" fill="#f4b65c" opacity=".18"/>
+                <path d="M18 44c4-8 9-12 14-12s10 4 14 12" fill="none" stroke="#b14c66" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Грижа и внимание</h3>
             <p>Създаваме топла и сигурна среда, в която всяко дете се чувства обичано и прието.</p>
           </article>
-          <article class="daily-card">
-            <div class="icon green">🧩</div>
+          <article class="daily-card atelier-card atelier-card-green">
+            <div class="atelier-card-blob"></div>
+            <div class="atelier-card-illu" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="48" height="48">
+                <ellipse cx="32" cy="38" rx="18" ry="10" fill="#e8f2df"/>
+                <rect x="14" y="22" width="12" height="12" rx="4" fill="#7fc38a"/>
+                <rect x="28" y="18" width="12" height="16" rx="4" fill="#7fc38a"/>
+                <rect x="42" y="26" width="8" height="12" rx="3" fill="#7fc38a"/>
+                <ellipse cx="32" cy="38" rx="10" ry="5" fill="#3f9b4e" opacity=".13"/>
+                <path d="M16 43h32" stroke="#2f7d49" stroke-width="3.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Учене чрез игра</h3>
             <p>Насърчаваме любопитството и въображението чрез игра, творчество и практически дейности.</p>
           </article>
-          <article class="daily-card">
-            <div class="icon yellow">☀</div>
+          <article class="daily-card atelier-card atelier-card-yellow">
+            <div class="atelier-card-blob"></div>
+            <div class="atelier-card-illu" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="48" height="48">
+                <ellipse cx="32" cy="38" rx="18" ry="10" fill="#fff0c7"/>
+                <circle cx="32" cy="28" r="12" fill="#ffd879"/>
+                <ellipse cx="32" cy="38" rx="10" ry="5" fill="#f4b65c" opacity=".13"/>
+                <path d="M32 12v6M32 46v6M12 32h6M46 32h6M18 18l4 4M42 42l4 4M18 46l4-4M42 22l4-4" stroke="#c18718" stroke-width="3.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Творчество и развитие</h3>
             <p>Подкрепяме развитието на умения, таланти и увереност във всяко дете.</p>
           </article>
-          <article class="daily-card">
-            <div class="icon blue">⌂</div>
+          <article class="daily-card atelier-card atelier-card-blue">
+            <div class="atelier-card-blob"></div>
+            <div class="atelier-card-illu" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="48" height="48">
+                <ellipse cx="32" cy="38" rx="18" ry="10" fill="#dff1ff"/>
+                <path d="M18 28l14-12 14 12v18H18V28Z" fill="#80c8e9"/>
+                <path d="M26 46V34h12v12" fill="none" stroke="#fdfbf3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <ellipse cx="32" cy="38" rx="10" ry="5" fill="#1a6f8f" opacity=".10"/>
+              </svg>
+            </div>
             <h3>Партньорство с родители</h3>
             <p>Работим в тясно сътрудничество с родителите за доброто на децата.</p>
           </article>
@@ -97,63 +300,55 @@
       </div>
     </section>
 
-    <section id="activities" class="section features">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Защо ни избират родителите</p>
-          <h2>Какво ни прави специални</h2>
-        </div>
-        <div class="feature-grid">
-          <article><h3>Грижа и внимание</h3><p>Топла и сигурна среда, в която всяко дете се чувства обичано и прието.</p></article>
-          <article><h3>Творчество и развитие</h3><p>Любопитство, креативност, игра, изкуство и разнообразни дейности.</p></article>
-          <article><h3>Здраве и движение</h3><p>Игри, спорт и активности за здраво тяло и силен дух.</p></article>
-          <article><h3>Партньорство</h3><p>Работа с родителите за спокойното развитие на децата.</p></article>
-        </div>
-      </div>
-    </section>
-
     <section id="news" class="news section">
+      <div class="section-decorations" aria-hidden="true">
+        <span class="decor-element decor-bunny float-l" style="top: 18%; left: 8%; width: 56px; height: 56px;">
+          <svg viewBox="0 0 56 56" role="presentation">
+            <ellipse cx="28" cy="34" rx="16" ry="12" fill="#fff" stroke="#2f7d49" stroke-width="2"/>
+            <circle cx="20" cy="25" r="4" fill="#2f7d49"/>
+            <circle cx="36" cy="25" r="4" fill="#2f7d49"/>
+            <path d="M22 17c3-3 9-3 12 0" stroke="#2f7d49" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M18 34c2 6 8 10 10 10s8-4 10-10" stroke="#2f7d49" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="decor-element decor-berry float-m" style="top: 24%; right: 10%; width: 44px; height: 44px;">
+          <svg viewBox="0 0 40 40" role="presentation">
+            <circle cx="20" cy="20" r="12" fill="#f68db2"/>
+            <path d="M20 8c-3 0-6 2-7 5" stroke="#b14c66" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </div>
       <div class="container">
         <div class="section-heading centered">
           <h2>Новини</h2>
           <span class="heart-line">♥</span>
         </div>
-        
-        <div class="news-grid">
-          <article class="news-card">
-            <div class="news-image" style="background: linear-gradient(135deg, #a8d5ba, #7ac587);"></div>
-            <div class="news-content">
-              <span class="news-date">22 май 2026</span>
-              <h3>Начало на летния сезон в детската градина</h3>
-              <p>Радостни новини! Летният сезон е пълен със специални дейности, игри на открито и творчески занимания. Децата ще се насладят на...</p>
-              <a href="#" class="read-more">Прочети повече →</a>
-            </div>
-          </article>
 
-          <article class="news-card">
-            <div class="news-image" style="background: linear-gradient(135deg, #ffd89b, #ffb347);"></div>
-            <div class="news-content">
-              <span class="news-date">15 май 2026</span>
-              <h3>Отпразнувахме Деня на детето в стила на Калина Малина</h3>
-              <p>Огромното празнуване на Деня на детето беше пълно с усмивки, музика и забавления. Всяко дете получи специален подарък и...</p>
-              <a href="#" class="read-more">Прочети повече →</a>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <div class="news-image" style="background: linear-gradient(135deg, #b5d6f2, #7eb8ff);"></div>
-            <div class="news-content">
-              <span class="news-date">8 май 2026</span>
-              <h3>Нова учебна програма и развитие на логическото мислене</h3>
-              <p>Въведохме нова програма за развитие на логическото мислене чрез игра и експеримент. Децата активно участват и...</p>
-              <a href="#" class="read-more">Прочети повече →</a>
-            </div>
-          </article>
-        </div>
+        <div class="news-grid"></div>
       </div>
     </section>
 
     <section id="gallery" class="gallery section">
+      <div class="section-decorations" aria-hidden="true">
+        <span class="decor-element decor-toy float-n" style="top: 16%; left: 6%; width: 58px; height: 58px;">
+          <svg viewBox="0 0 60 60" role="presentation">
+            <rect x="20" y="18" width="20" height="16" rx="6" fill="#ffd879" stroke="#c18718" stroke-width="2"/>
+            <path d="M22 26h16" stroke="#fff4cf" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="34" r="4" fill="#80c8e9"/>
+            <circle cx="36" cy="34" r="4" fill="#80c8e9"/>
+            <path d="M18 40h24" stroke="#f68db2" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="decor-element decor-flower float-o" style="top: 22%; right: 5%; width: 48px; height: 48px;">
+          <svg viewBox="0 0 52 52" role="presentation">
+            <circle cx="26" cy="26" r="7" fill="#ffd879"/>
+            <ellipse cx="26" cy="10" rx="6" ry="8" fill="#f68db2"/>
+            <ellipse cx="26" cy="42" rx="6" ry="8" fill="#7fc38a"/>
+            <ellipse cx="10" cy="26" rx="8" ry="6" fill="#ffe7eb"/>
+            <ellipse cx="42" cy="26" rx="8" ry="6" fill="#e8f2df"/>
+          </svg>
+        </span>
+      </div>
       <div class="container">
         <div class="section-row">
           <h2>Галерия</h2>
@@ -169,6 +364,20 @@
     </section>
 
     <section id="documents" class="documents section">
+      <div class="section-decorations" aria-hidden="true">
+        <span class="decor-element decor-leaf float-p" style="top: 16%; left: 5%; width: 52px; height: 52px;">
+          <svg viewBox="0 0 54 34" role="presentation">
+            <ellipse cx="27" cy="17" rx="18" ry="10" fill="#e8f2df"/>
+            <path d="M27 17c0-8 8-13 20-13" stroke="#2f7d49" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="decor-element decor-berry float-q" style="top: 20%; right: 7%; width: 40px; height: 40px;">
+          <svg viewBox="0 0 40 40" role="presentation">
+            <circle cx="20" cy="20" r="12" fill="#f68db2"/>
+            <path d="M20 8c-3 0-6 2-7 5" stroke="#b14c66" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </div>
       <div class="container">
         <div class="section-row">
           <h2>Документи</h2>
@@ -207,6 +416,24 @@
 
     <section id="contacts" class="contact-footer">
       <div class="wave" aria-hidden="true"></div>
+      <div class="section-decorations" aria-hidden="true">
+        <span class="decor-element decor-teddy float-r" style="top: 10%; left: 5%; width: 56px; height: 56px;">
+          <svg viewBox="0 0 56 56" role="presentation">
+            <ellipse cx="28" cy="34" rx="16" ry="12" fill="#ffd7e1" stroke="#f68db2" stroke-width="2"/>
+            <circle cx="21" cy="24" r="3.5" fill="#2f7d49"/>
+            <circle cx="35" cy="24" r="3.5" fill="#2f7d49"/>
+            <path d="M18 22c4-6 8-8 10-8 2 0 6 2 10 8" stroke="#2f7d49" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M23 36c1 3 4 5 5 5s4-2 5-5" stroke="#f68db2" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="decor-element decor-balloon float-j" style="top: 14%; right: 8%; width: 54px; height: 54px;">
+          <svg viewBox="0 0 56 84" role="presentation">
+            <ellipse cx="28" cy="30" rx="16" ry="22" fill="#ffd7e1"/>
+            <path d="M28 52c-5 0-9 4-9 9v8h18v-8c0-5-4-9-9-9Z" fill="#ffd7e1"/>
+            <path d="M28 18c-4 0-7 3-7 7" stroke="#f68db2" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </div>
       <div class="container contact-grid">
         <div class="footer-section footer-brand">
           <span class="flower-logo small" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
@@ -218,20 +445,21 @@
 
         <div class="footer-section">
           <h3>Основна сграда</h3>
-          <p><span class="icon-location">⌖</span> гр. София<br>р-н Надежда<br>ул. „Република" 70</p>
+          <p><span class="contact-icon icon-location" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><path d="M12 21s-6-5.1-6-10a6 6 0 1 1 12 0c0 4.9-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg></span> гр. София<br>р-н Надежда<br>ул. „Република" 70</p>
         </div>
 
         <div class="footer-section">
           <h3>Филиал</h3>
-          <p><span class="icon-location">⌖</span> гр. София<br>р-н Надежда<br>ул. „Александър Михов" 25</p>
+          <p><span class="contact-icon icon-location" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><path d="M12 21s-6-5.1-6-10a6 6 0 1 1 12 0c0 4.9-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg></span> гр. София<br>р-н Надежда<br>ул. „Александър Михов" 25</p>
         </div>
 
         <div class="footer-section">
           <h3>Контакти</h3>
           <div class="contact-links">
-            <p><span>☏</span><a href="tel:0897983333">0897983333</a></p>
-            <p><span>✉</span><a href="mailto:dg137@abv.bg">dg137@abv.bg</a></p>
-            <p><span>👤</span><strong>Директор:</strong> Снежина Мишева</p>
+            <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><path d="M6.5 3.5h4l2 4.5-2.3 1.6a11 11 0 0 0 5.7 5.7l1.6-2.3 4.5 2v4a1.5 1.5 0 0 1-1.5 1.5A13.5 13.5 0 0 1 5 5a1.5 1.5 0 0 1 1.5-1.5Z"/></svg></span><a href="tel:0897983333">0897983333</a></p>
+            <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m5 7 7 5 7-5"/></svg></span><a href="mailto:dg137@abv.bg">dg137@abv.bg</a></p>
+            <p class="director-line"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><circle cx="12" cy="9" r="3.5"/><path d="M6 19.5c1.5-4 4.5-6 6-6s4.5 2 6 6"/></svg></span><strong>Директор:</strong><span class="director-name">Снежина Мишева</span></p>
+            <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="presentation"><path d="M13.5 3.5c2.9 0 5.2 2.3 5.2 5.2 0 2.6-2.1 4.8-4.8 5.1 0 0 0 0 0 0l-1.7 0-1.7 0c-2.7-.3-4.8-2.5-4.8-5.1 0-2.9 2.3-5.2 5.2-5.2Zm-4.6 12.3c-2.9 0-5.2 2.3-5.2 5.2v1.3h10.2v-1.3c0-2.9-2.3-5.2-5.2-5.2h-1.9Z"/></svg></span><a href="https://www.facebook.com/odz137kalinamalina" target="_blank" rel="noopener noreferrer">Facebook</a></p>
           </div>
         </div>
       </div>
@@ -275,8 +503,10 @@
           <p>© 2026 137 ДГ „Калина Малина“. Всички права запазени.</p>
         </div>
         <div class="footer-bottom-right">
-          <div class="socials">
-            <a href="https://www.facebook.com/odz137kalinamalina" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="facebook-link">Facebook</a>
+          <div class="footer-legal-links">
+            <a href="privacy.html" class="footer-legal-link">Политика за поверителност</a>
+            <span class="footer-legal-divider">•</span>
+            <a href="terms.html" class="footer-legal-link">Общи условия</a>
           </div>
           <a href="https://atelierv.design" target="_blank" rel="noopener noreferrer" class="footer-credit"><span class="footer-credit-label">изработено от</span><span class="footer-credit-brand">atelier.design</span></a>
         </div>
