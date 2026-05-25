@@ -830,19 +830,69 @@ body.gallery-lightbox-open{
   .contact-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:620px){
-  .container{width:min(100% - 28px,1120px)}
-  .section{padding:54px 0}
+  .container{width:min(100% - 24px,1120px)}
+  .section{padding:58px 0}
   .nav-wrap{height:76px}
   .brand-text{font-size:15px}.brand-text em{font-size:15px}.flower-logo{width:42px;height:42px;transform:scale(.78)}
   .main-nav{top:76px;left:14px;right:14px}
-  .hero{padding-top:22px}
-  .blob-shape{height:310px}
-  .eyebrow{font-size:20px}
-  .hero-text{font-size:18px}
-  .hero-badges,.cards-grid,.feature-grid,.docs-grid,.gallery-grid,.news-grid,.contact-grid,.map-cards-grid{grid-template-columns:1fr}
+
+  .hero{padding-top:18px}
+  .hero-grid{gap:24px}
+  .blob-shape{height:280px}
+  .eyebrow{font-size:18px; margin-bottom:8px}
+  h1{font-size:clamp(38px,10vw,46px); margin-bottom:14px}
+  h2{font-size:30px}
+  .hero-text{font-size:17px; line-height:1.65; margin-bottom:22px}
+
+  .sun{width:56px;height:56px;top:-10px;right:86px}
+  .cloud{width:72px;height:46px;top:56px;right:4px}
+
+  .hero-badges{grid-template-columns:1fr; gap:14px; max-width:100%}
+  .hero-badge-card{flex-direction:row; gap:14px; align-items:center; justify-content:flex-start; text-align:left}
+  .hero-badge-visual{width:74px;height:74px; flex-shrink:0}
+  .hero-badge-visual svg{width:62px;height:62px}
+  .hero-badge-card p{font-size:14px; line-height:1.4}
+
+  .section-heading{margin-bottom:24px}
   .section-row,.footer-bottom,.footer-bottom-right{align-items:flex-start;flex-direction:column}
-  .footer-bottom-right{gap:12px; width:100%;}
-  .footer-credit{width:100%; justify-content:flex-start;}
+  .section-row{gap:14px}
+  .outline-btn{width:100%; justify-content:center}
+
+  .cards-grid,.feature-grid,.docs-grid,.gallery-grid,.news-grid,.contact-grid,.map-cards-grid{grid-template-columns:1fr; gap:16px}
+  .atelier-card{padding:22px 18px}
+  .atelier-card h3{font-size:1.1rem}
+  .atelier-card p{font-size:1rem}
+
+  .gallery-grid figure{height:auto; aspect-ratio:4 / 3}
+
+  .news-image{min-height:180px}
+  .news-content{padding:20px 18px 22px; gap:10px}
+  .news-card h3{font-size:18px}
+  .news-card p{font-size:14.5px}
+
+  .news-state{padding:22px 18px}
+
+  .documents-grid{padding:0; gap:14px}
+  .doc-tile{min-height:200px; padding:16px}
+  .doc-icon{width:40px;height:42px}
+  .doc-tile strong{font-size:15px}
+  .doc-tile p{font-size:13px; margin:8px 0 12px}
+  .doc-action{width:100%; justify-content:center}
+
+  .contact-footer{padding-top:56px}
+  .contact-grid{gap:20px}
+  .footer-section{gap:12px}
+  .footer-brand h3{font-size:20px}
+  .contact-icon{width:26px;height:26px}
+  .contact-links p{align-items:flex-start; flex-wrap:wrap}
+  .director-line{white-space:normal; align-items:flex-start}
+  .footer-bottom{padding:18px 0; gap:14px}
+  .footer-bottom-right{gap:10px; width:100%}
+  .footer-legal-links{display:grid; gap:6px}
+  .footer-legal-divider{display:none}
+  .footer-credit{width:100%; justify-content:flex-start}
+
+  .section-decorations .decor-element{opacity:.3; transform:scale(.8)}
 }
 
 .legal-page {
